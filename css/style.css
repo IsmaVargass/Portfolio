@@ -41,6 +41,8 @@ nav ul li a {
     font-size: 1.2em;
 }
 
+
+
 .btn {
     display: inline-block;
     margin-top: 20px;
@@ -50,6 +52,11 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
 }
 
 .skills {
@@ -57,19 +64,57 @@ nav ul li a {
     padding: 50px 20px;
 }
 
-.skills-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.skills h2 {
+    color: #64FFDA;
 }
 
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+/* Muestra las skills en fila de 4 */
 .skill {
     background-color: #112240;
-    margin: 10px;
-    padding: 20px;
+    padding: 15px;
     border-radius: 5px;
-    width: 150px;
+    width: calc(20% - 20px);
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill img {
+    width: 50px;
+    height: 50px;
+    /* Imagen blanca */
+    filter: brightness(0) invert(100%);
+}   
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+    .skill {
+        width: calc(25% - 20px); 
+    }
+}
+
+@media (max-width: 768px) {
+    .skill {
+        width: calc(33.33% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .skill {
+        width: calc(50% - 20px); 
+    }
 }
 
 footer {
@@ -77,4 +122,155 @@ footer {
     padding: 20px;
     background-color: #112240;
     margin-top: 50px;
+}
+
+
+
+
+
+
+/* GALERIA */
+
+#galeria-img { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.galeria-item {
+    position: relative; /* Esto es necesario para que el texto se posicione dentro de cada imagen */
+}
+
+.galeria-item img {
+    width: 510px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.6;
+    transition: .5s ease;
+    display: block;
+}
+
+.galeria-item:hover img {
+    cursor: pointer;
+    width: 700px;
+    opacity: 0.9;
+    filter: contrast(120%);
+}
+
+.galeria-item .texto-hover {
+    position: absolute;
+    top: 50%; /* Centra el texto verticalmente dentro del contenedor */
+    left: 50%; /* Centra el texto horizontalmente dentro del contenedor */
+    transform: translate(-50%, -50%); /* Ajusta para que el centro del texto coincida con el centro de la imagen */
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.galeria-item:hover .texto-hover {
+    opacity: 1;
+}
+
+
+
+/* CONTACTO */
+.contact-form {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 18px;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea,
+.form-group select {
+    width: 95%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="radio"],
+.form-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.form-group input[type="radio"] + label,
+.form-group input[type="checkbox"] + label {
+    display: inline;
+    font-size: 16px;
+    color: #34495e;
+    margin-right: 20px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 180px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    background-color: #16a085;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1abc9c;
+}
+
+button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+.form-group select {
+    background-color: #ecf0f1;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #16a085;
+    outline: none;
+    background-color: #ffffff;
 }
