@@ -179,6 +179,74 @@ footer {
     opacity: 1;
 }
 
+#galeria-img { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.galeria-item {
+    position: relative; /* Necesario para que el texto se posicione dentro de cada imagen */
+    overflow: hidden;
+}
+
+.galeria-item img {
+    width: 510px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: 0.5s ease-in-out;
+    display: block;
+    border-radius: 10px; /* Bordes redondeados para una apariencia más moderna */
+}
+
+.galeria-item:hover img {
+    cursor: pointer;
+    width: 700px;
+    opacity: 1;
+    filter: contrast(110%) brightness(1.1);
+    transform: scale(1.05); /* Suave efecto de zoom */
+}
+
+.galeria-item .texto-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: justify;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    pointer-events: none;
+}
+
+.galeria-item:hover .texto-hover {
+    opacity: 1;
+}
+
+.texto-hover h3 {
+    color: #5cb39e;
+    font-size: 20px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.texto-hover p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ddd;
+    margin-bottom: 5px;
+}
+
+
 
 
 /* CONTACTO */
