@@ -28,6 +28,11 @@ nav ul li a {
     font-weight: bold;
 }
 
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
 .hero {
     text-align: center;
     padding: 100px 20px;
@@ -355,7 +360,7 @@ button:disabled {
 }
 
 .about-me img {
-    width: 20%;
+    width: 30%;
     height: auto;
     border-radius: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -376,4 +381,10 @@ button:disabled {
 
 .about-me span {
     color: #1abc9c;
+}
+
+.footer-about{
+    width: 100%;
+    bottom: 0;
+    position: fixed;
 }
