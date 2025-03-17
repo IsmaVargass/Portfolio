@@ -187,6 +187,7 @@ footer {
     height: 430px;
     margin: 0 auto;
     position: relative;
+    gap: 40px;
 }
 
 .galeria-item {
@@ -341,4 +342,38 @@ button:disabled {
     border-color: #16a085;
     outline: none;
     background-color: #ffffff;
+}
+
+
+
+/* SOBRE MÍ */
+.about-me {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.about-me img {
+    width: 20%;
+    height: auto;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.about-me h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #6aefd5;
+}
+
+.about-me p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #ecf0f1;
+}
+
+.about-me span {
+    color: #1abc9c;
 }
