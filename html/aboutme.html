@@ -5,19 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mí | Mi Portfolio</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/logotipo.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <nav>
-            <img src="img/logotipo.png" alt="Logotipo de Mi Portfolio" class="logo"> <!-- Logotipo -->
+      <video autoplay muted loop class="header-video">
+        <source src="../video/header.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+    </video>
+    <div class="video-overlay"></div>
+        <nav class="container-nav">
+          <!-- Logotipo principal -->
+          <a href="../index.html">
+            <img src="../img/logotipo.png" alt="Logotipo de Mi Portfolio" class="logo">
+            </a>
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="aboutme.html">Sobre mí</a></li>
-                <li><a href="gallery.html">Proyectos</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
+            <li>
+              <a href="../index.html">
+                <img src="../img/casa.png" alt="Inicio" class="nav-icon">
+                <span class="nav-tooltip">Inicio</span>
+              </a>
+            </li>
+            <li>
+              <a href="aboutme.html">
+                <img src="../img/usuario.png" alt="Sobre mí" class="nav-icon">
+                <span class="nav-tooltip">Sobre mí</span>
+              </a>
+            </li>
+            <li>
+              <a href="gallery.html">
+                <img src="../img/proyectos.png" alt="Proyectos" class="nav-icon">
+                <span class="nav-tooltip">Proyectos</span>
+              </a>
+            </li>
+            <li>
+              <a href="contact.html">
+                <img src="../img/msg.png" alt="Contacto" class="nav-icon">
+                <span class="nav-tooltip">Contacto</span>
+              </a>
+            </li>
+          </ul>
         </nav>
-    </header>
+      </header>
 
     <main>
         <section class="about-me">

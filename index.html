@@ -1,148 +1,177 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio profesional de Ismael Vargas">
-    <title>Inicio | Mi Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio profesional de Ismael Vargas">
+  <title>Inicio | Mi Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/logotipo.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="img/logotipo.png" alt="Logotipo de Mi Portfolio" class="logo"> <!-- Logotipo -->
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="html/aboutme.html">Sobre mí</a></li>
-                <li><a href="html/gallery.html">Proyectos</a></li>
-                <li><a href="html/contact.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="hero">
-            <h1>Bienvenido a mi Portfolio</h1>
-            <p>Desarrollador de Aplicaciones Web | Apasionado por la tecnología</p>
-            <a href="html/gallery.html" class="btn">Ver Proyectos</a>
-        </section>
+  <header>
+    <video autoplay muted loop class="header-video">
+      <source src="video/header.mp4" type="video/mp4">
+      Tu navegador no soporta el video.
+    </video>
+    <div class="video-overlay"></div>
+    <nav class="container-nav">
+      <!-- Logotipo principal -->
+      <a href="index.html">
+      <img src="img/logotipo.png" alt="Logotipo de Mi Portfolio" class="logo">
+      </a>
+      <ul>
+        <li>
+          <a href="index.html">
+            <img src="img/casa.png" alt="Inicio" class="nav-icon">
+            <span class="nav-tooltip">Inicio</span>
+          </a>
+        </li>
+        <li>
+          <a href="html/aboutme.html">
+            <img src="img/usuario.png" alt="Sobre mí" class="nav-icon">
+            <span class="nav-tooltip">Sobre mí</span>
+          </a>
+        </li>
+        <li>
+          <a href="html/gallery.html">
+            <img src="img/proyectos.png" alt="Proyectos" class="nav-icon">
+            <span class="nav-tooltip">Proyectos</span>
+          </a>
+        </li>
+        <li>
+          <a href="html/contact.html">
+            <img src="img/msg.png" alt="Contacto" class="nav-icon">
+            <span class="nav-tooltip">Contacto</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-        <section class="skills">
-            <h2>Hard skills</h2>
-            <div class="skills-container">
-                <div class="skill">
-                    <img src="img/java.svg" alt="Java">
-                    <h3>Java</h3>
-                </div>
-                <div class="skill">
-                    <img src="img/XML.png" alt="XML">
-                    <h3>XML</h3>
-                </div>
-                <div class="skill">
-                    <img src="img/html5.svg" alt="HTML 5">
-                    <h3>HTML 5</h3>
-                </div>
-                <div class="skill">
-                    <img src="img/css.svg" alt="CSS">
-                    <h3>CSS</h3>
-                </div>
-                <div class="skill">
-                    <img src="img/js.svg" alt="JavaScript">
-                    <h3>JavaScript</h3>
-                </div>
-                <div class="skill">
-                    <img src="img/Wordpress.svg" alt="WordPress">
-                    <h3>WordPress</h3>
-                </div>
-                <div class="skill">
-                    <img src="img/bootstrap.svg" alt="Bootstrap">
-                    <h3>Bootstrap</h3>
-                </div>
-                <div class="skill">
-                    <img src="img/photoshop.svg" alt="Photoshop">
-                    <h3>Photoshop</h3>
-                </div>
-                <div class="skill">
-                    <img src="img/php.svg" alt="PHP 8">
-                    <h3>PHP 8</h3>
-                </div>
-                <div class="skill">
-                    <img src="img/git.svg" alt="GIT">
-                    <h3>GIT</h3>
-                </div>
-                <div class="skill">
-                    <img src="img/github.svg" alt="GitHub">
-                    <h3>GitHub</h3>
-                </div>
-                <div class="skill">
-                    <img src="img/mysql.png" alt="MySQL">
-                    <h3>MySQL</h3>
-                </div>
-                <div class="skill">
-                    <img src="img/cisco.svg" alt="CISCO">
-                    <h3>CISCO</h3>
-                </div>
-                <div class="skill">
-                    <img src="img/virtualbox.svg" alt="VirtualBox">
-                    <h3>VirtualBox</h3>
-                </div>
-                <div class="skill">
-                    <img src="img/markdown.svg" alt="Markdown">
-                    <h3>Markdown</h3>
-                </div>
-                <div class="skill">
-                    <img src="img/bash.png" alt="Bash Script">
-                    <h3>Bash Script</h3>
-                </div>
-            </div>
-        </section>
+  <main>
 
-        <section class="skills">
-            <h2>Soft skills</h2>
-            <div class="skills-container">
-                <div class="skill">
-                    <img src="img/comunicacion.svg" alt="Comunicación">
-                    <h3>Comunicación efectiva</h3>
-                </div>
-                <div class="skill">
-                    <img src="img/people.svg" alt="Trabajo en equipo">
-                    <h3>Trabajo en equipo</h3>
-                </div>
-                <div class="skill">
-                    <img src="img/gestion.svg" alt="Gestión del tiempo">
-                    <h3>Gestión del tiempo</h3>
-                </div>
-                <div class="skill">
-                    <img src="img/problemas.svg" alt="Pensamiento crítico">
-                    <h3>Pensamiento crítico y resolución de problemas</h3>
-                </div>
-                <div class="skill">
-                    <img src="img/aprendizaje.svg" alt="Adaptabilidad">
-                    <h3>Adaptabilidad y aprendizaje continuo</h3>
-                </div>
-                <div class="skill">
-                    <img src="img/liderazgo.svg" alt="Liderazgo">
-                    <h3>Liderazgo</h3>
-                </div>
-                <div class="skill">
-                    <img src="img/empatia.png" alt="Empatía">
-                    <h3>Empatía</h3>
-                </div>
-                <div class="skill">
-                    <img src="img/proyectos.svg" alt="Gestión de proyectos">
-                    <h3>Gestión de proyectos</h3>
-                </div>
-            </div>
-        </section>
+    <!-- Sección principal: Hero -->
+    <section id="inicio" class="hero">
+      <h1>Bienvenido a mi Portfolio</h1>
+      <p>Desarrollador de Aplicaciones Web | Apasionado por la tecnología</p>
+      <!-- Se mantiene el enlace existente. Puedes cambiarlo si deseas navegar internamente -->
+      <a href="html/gallery.html" class="btn">Ver Proyectos</a>
+    </section>
 
-    </main>
+    <!-- Sección Hard skills -->
+    <section id="hard-skills" class="skills">
+      <h2>Hard skills</h2>
+      <div class="skills-container">
+        <div class="skill">
+          <img src="img/java.svg" alt="Java">
+          <h3>Java</h3>
+        </div>
+        <div class="skill">
+          <img src="img/XML.png" alt="XML">
+          <h3>XML</h3>
+        </div>
+        <div class="skill">
+          <img src="img/html5.svg" alt="HTML 5">
+          <h3>HTML 5</h3>
+        </div>
+        <div class="skill">
+          <img src="img/css.svg" alt="CSS">
+          <h3>CSS</h3>
+        </div>
+        <div class="skill">
+          <img src="img/js.svg" alt="JavaScript">
+          <h3>JavaScript</h3>
+        </div>
+        <div class="skill">
+          <img src="img/Wordpress.svg" alt="WordPress">
+          <h3>WordPress</h3>
+        </div>
+        <div class="skill">
+          <img src="img/bootstrap.svg" alt="Bootstrap">
+          <h3>Bootstrap</h3>
+        </div>
+        <div class="skill">
+          <img src="img/photoshop.svg" alt="Photoshop">
+          <h3>Photoshop</h3>
+        </div>
+        <div class="skill">
+          <img src="img/php.svg" alt="PHP 8">
+          <h3>PHP 8</h3>
+        </div>
+        <div class="skill">
+          <img src="img/git.svg" alt="GIT">
+          <h3>GIT</h3>
+        </div>
+        <div class="skill">
+          <img src="img/github.svg" alt="GitHub">
+          <h3>GitHub</h3>
+        </div>
+        <div class="skill">
+          <img src="img/mysql.png" alt="MySQL">
+          <h3>MySQL</h3>
+        </div>
+        <div class="skill">
+          <img src="img/cisco.svg" alt="CISCO">
+          <h3>CISCO</h3>
+        </div>
+        <div class="skill">
+          <img src="img/virtualbox.svg" alt="VirtualBox">
+          <h3>VirtualBox</h3>
+        </div>
+        <div class="skill">
+          <img src="img/markdown.svg" alt="Markdown">
+          <h3>Markdown</h3>
+        </div>
+        <div class="skill">
+          <img src="img/bash.png" alt="Bash Script">
+          <h3>Bash Script</h3>
+        </div>
+      </div>
+    </section>
 
-    <footer>
-        <p>© <script>document.write(new Date().getFullYear());</script> Ismael Vargas Duque - Todos los derechos reservados.</p>
-    </footer>
+    <!-- Sección Soft skills -->
+    <section id="soft-skills" class="skills">
+      <h2>Soft skills</h2>
+      <div class="skills-container">
+        <div class="skill">
+          <img src="img/comunicacion.svg" alt="Comunicación">
+          <h3>Comunicación efectiva</h3>
+        </div>
+        <div class="skill">
+          <img src="img/people.svg" alt="Trabajo en equipo">
+          <h3>Trabajo en equipo</h3>
+        </div>
+        <div class="skill">
+          <img src="img/gestion.svg" alt="Gestión del tiempo">
+          <h3>Gestión del tiempo</h3>
+        </div>
+        <div class="skill">
+          <img src="img/problemas.svg" alt="Pensamiento crítico">
+          <h3>Pensamiento crítico y resolución de problemas</h3>
+        </div>
+        <div class="skill">
+          <img src="img/aprendizaje.svg" alt="Adaptabilidad">
+          <h3>Adaptabilidad y aprendizaje continuo</h3>
+        </div>
+        <div class="skill">
+          <img src="img/liderazgo.svg" alt="Liderazgo">
+          <h3>Liderazgo</h3>
+        </div>
+        <div class="skill">
+          <img src="img/empatia.png" alt="Empatía">
+          <h3>Empatía</h3>
+        </div>
+        <div class="skill">
+          <img src="img/proyectos.svg" alt="Gestión de proyectos">
+          <h3>Gestión de proyectos</h3>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <script>document.write(new Date().getFullYear());</script> Ismael Vargas Duque - Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
-
-
-<!-- #082150 -->
- <!-- #071d51 -->
