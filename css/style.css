@@ -337,6 +337,7 @@ footer {
     border-radius: 15px;
     filter: brightness(0.8);
     transition: filter 0.3s ease, transform 0.5s ease;
+    cursor: pointer;
 }
 
 .galeria-item:hover img {
