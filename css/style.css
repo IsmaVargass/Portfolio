@@ -9,8 +9,16 @@ body {
     overflow-x: hidden;
 }
 
+:root {
+    --primary-color: #262e3b; /* Color base */
+    --secondary-color: #2c3e50; /* Gris oscuro */
+    --highlight-color: #4e5d6c; /* Azul oscuro */
+    --accent-color: #34495e; /* Gris azulado */
+    --neon-color: #1abc9c; /* Un color neón suave (para detalles) */
+}
+
 p {
-    font-family: 'Antonio', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 /* ANIMACIONES PARA CLASES */
@@ -96,10 +104,27 @@ header {
     flex-direction: row;
     align-items: center;
 }
-
 header img {
     width: 100px;
-    filter: brightness() invert(100%);
+    filter: brightness(1) invert(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+header img:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease-in-out;
+    
+}
+header img {
+    width: 100px;
+    filter: brightness(1) invert(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+header img:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease-in-out;
+    
 }
 
 nav ul {
@@ -175,15 +200,17 @@ nav ul li a:hover .nav-tooltip {
 }
 
 .btn {
+    font-family: 'Quicksand', sans-serif;
     display: inline-block;
     margin-top: 20px;
     padding: 8px 16px;  /* Menos padding para móvil */
-    background-color: #64FFDA;
-    color: #000000;
+    background-color: #262e3b;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     transition: transform 0.3s ease-in-out;
+    border: 2px solid #f7f7f7;
 }
 
 .btn:hover {
@@ -191,6 +218,7 @@ nav ul li a:hover .nav-tooltip {
 }
 
 .skills {
+    font-family: 'Source Code Pro', sans-serif;
     text-align: center;
     padding: 50px 20px;
 }
@@ -340,12 +368,12 @@ footer {
 
 .texto-hover h3 {
     font-size: 1.5em;
-    color: #6164ff;
+    color: #8ea4b9;
     margin-bottom: 12px;
 }
 
 .texto-hover p {
-    font-size: 1.1em;
+    font-size: 1em;
     color: #ddd;
     line-height: 1.6;
     margin-bottom: 0;
@@ -379,7 +407,7 @@ footer {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #cef0f5;
+    background-color: #34495e3b;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     border: 2px solid #bdc3c7;
@@ -436,10 +464,11 @@ h2 {
 }
 
 button {
+    font-family: 'Quicksand', sans-serif;
     width: 100%;
     padding: 14px;
     font-size: 18px;
-    background-color: #16a085;
+    background-color: #262e3b;
     color: white;
     border: none;
     border-radius: 5px;
@@ -448,7 +477,7 @@ button {
 }
 
 button:hover {
-    background-color: #1abc9c;
+    background-color: #787b80;
 }
 
 button:disabled {
@@ -464,13 +493,14 @@ button:disabled {
 .form-group input[type="email"]:focus,
 .form-group textarea:focus,
 .form-group select:focus {
-    border-color: #16a085;
+    border-color: #b1b3b2;
     outline: none;
     background-color: #ffffff;
 }
 
 /* SOBRE MÍ */
 .about-me {
+    font-family: 'Source Code Pro', sans-serif;
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
@@ -479,31 +509,34 @@ button:disabled {
 
 @keyframes neon-glow {
     0% {
-      box-shadow: 0 0 10px #cd5aab, 0 0 20px #00bfff, 0 0 30px #cd5aab;
+      box-shadow: 0 0 10px var(--highlight-color), 0 0 20px var(--accent-color), 0 0 30px var(--highlight-color);
     }
     50% {
-      box-shadow: 0 0 20px #00bfff, 0 0 30px #6a5acd, 0 0 40px #00bfff;
+      box-shadow: 0 0 20px var(--accent-color), 0 0 30px var(--primary-color), 0 0 40px var(--accent-color);
     }
     100% {
-      box-shadow: 0 0 10px #cd5aab, 0 0 20px #00bfff, 0 0 30px #cd5aab;
+      box-shadow: 0 0 10px var(--highlight-color), 0 0 20px var(--accent-color), 0 0 30px var(--highlight-color);
     }
 }
-  
+
+/* Estilos para la imagen */
 .about-me img {
     width: 30%;
     height: auto;
     border-radius: 40px;
-    border: 3px solid #6a5acd; /* Borde con color neón */
-    box-shadow: 0 0 15px #6a5acd, 0 0 25px #00bfff;
+    border: 3px solid var(--highlight-color); /* Borde con color complementario */
+    box-shadow: 0 0 15px var(--highlight-color), 0 0 25px var(--accent-color);
     transition: transform 0.3s ease;
-    animation: neon-glow 1.5s infinite alternate;
+    animation: neon-glow 1s infinite alternate;
 }
-  
+
+/* Efecto hover en la imagen */
 .about-me img:hover {
     transform: scale(1.05) rotate(2deg);
-    box-shadow: 0 0 25px #ca048f, 0 0 35px #ca048f, 0 0 50px #ca048f;
+    box-shadow: 0 0 25px var(--neon-color), 0 0 35px var(--neon-color), 0 0 50px var(--neon-color);
 }
-  
+
+/* Estilos para el botón */
 .cv-button {
     display: inline-block;
     margin-top: 15px;
@@ -511,16 +544,16 @@ button:disabled {
     font-size: 1.1em;
     font-weight: 600;
     color: #ffffff;
-    background: linear-gradient(45deg, #6a5acd, #8a2be2);
+    background: linear-gradient(45deg, var(--highlight-color), var(--primary-color));
     border: none;
     border-radius: 8px;
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
 }
-  
+
 .cv-button:hover {
-    background: linear-gradient(45deg, #8b54be, #6a5acd);
+    background: linear-gradient(45deg, var(--accent-color), var(--highlight-color));
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
@@ -538,18 +571,18 @@ button:disabled {
 }
   
 .about-me span {
-    color: #ffffff;
+    color: #ffffff; 
     font-weight: bold;
-    background: linear-gradient(90deg, #695acd73, #00bfff7c);
+    background: linear-gradient(90deg, var(--highlight-color), var(--accent-color)); 
     padding: 4px 10px;
     border-radius: 6px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #000000;
+    border: 1px solid var(--primary-color); 
 }
-  
+
 .about-me span:hover {
     transform: scale(1.1);
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.7); 
 }
   
 .footer-about{
