@@ -6,9 +6,16 @@
     <title>Galería | Mi Portfolio</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/logotipo.png" type="image/x-icon">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet"></head>
 <body>
     <header>
+      <section class="hero">
+        <h1>Echale un vistazo a mis proyectos</h1>
+        <hr>
+        <p>Explora mis proyectos de Desarrollo de Aplicaciones Web, donde combino creatividad y tecnología para construir soluciones innovadoras.</p>
+        <a href="../html/aboutme.html" class="btn">Sobre mí</a>
+    </section>
       <video autoplay muted loop class="header-video">
         <source src="../video/header.mp4" type="video/mp4">
         Tu navegador no soporta el video.
@@ -48,67 +55,63 @@
         </nav>
       </header>
 
-    <section class="hero">
-        <h1>Bienvenido a mis Proyectos</h1>
-        <p>Explora mis proyectos de Desarrollo de Aplicaciones Web, donde combino creatividad y tecnología para construir soluciones innovadoras.</p>
-        <a href="../html/aboutme.html" class="btn">Sobre mí</a>
-    </section>
-
-    <section id="galeria-img">
-        <div class="galeria-item" onclick="window.open('https://ismavargass.github.io/Iberdrola/')">
-            <img src="../img/iberdrola.png" alt="Web de Sostenibilidad">
-            <div class="texto-hover">
-                <h3>Plataforma Web de Sostenibilidad</h3>
-                <p>
-                    Plataforma web para Iberdrola enfocada en la sostenibilidad y alineada con los objetivos de la Agenda 2030. 
-                    Esta plataforma permite la compra y venta de productos de segunda mano, similar a Vinted, fomentando así la economía 
-                    circular y el consumo responsable.
-                </p>
-                <p>
-                    Para su desarrollo, utilicé <strong>HTML, CSS y Bootstrap</strong> para crear una interfaz atractiva, responsiva y fácil de navegar. 
-                    Con Bootstrap, aseguré un diseño moderno y adaptable a cualquier dispositivo. Además, implementé <strong>JavaScript</strong> para mejorar 
-                    la interactividad y la experiencia del usuario, permitiendo funciones dinámicas como filtros, animaciones y actualizaciones en tiempo real.
-                </p>
-                <p>
-                    El objetivo de esta web es reducir el impacto ambiental al promover la reutilización de productos, ayudando a minimizar residuos y a 
-                    optimizar recursos. Con esta iniciativa, Iberdrola refuerza su compromiso con la sostenibilidad, ofreciendo a los usuarios una alternativa 
-                    eficiente y ecológica para dar una segunda vida a los objetos.
-                </p>
-            </div>
-        </div>
-        
-        <div class="galeria-item" onclick="window.open('https://github.com/savamidev/Astralis')">
-            <img src="../img/juego.png" alt="Juego de Java">
-            <div class="texto-hover">
-                <h3>Juego en Java 2D - Astralis</h3>
-                <p>
-                    Desarrollé un <strong>juego en Java 2D con Pixel Art</strong>, inspirado en los juegos retro de los 90. Utilicé <strong>Java con Swing/JavaFX</strong>, implementando un motor gráfico optimizado para <strong>sprites, animaciones y colisiones</strong>, además de un sistema de <strong>física y efectos visuales mejorados</strong>.
-                </p>
-                <p>
-                    El diseño visual incluye <strong>Pixel Art detallado y una paleta vibrante</strong>, garantizando una experiencia fluida e inmersiva. Este proyecto combina innovación y nostalgia, rindiendo homenaje a los videojuegos clásicos.
-                </p>                           
-            </div>
-        </div>
-        
-        <div class="galeria-item" onclick="window.open('https://github.com/Proyecto-BookTrack/Proyecto-BookTrack')">
-            <img src="../img/libreria.png" alt="BookTrack">
-            <div class="texto-hover">
-                <h3>BookTrack - Gestión de Libros</h3>
-                <p>
+      <section id="galeria-img">
+        <div class="slider">
+            <div class="galeria-item" onclick="window.open('https://ismavargass.github.io/Iberdrola/')">
+                <img src="../img/iberdrola.png" alt="Web de Sostenibilidad">
+                <div class="texto-hover">
+                    <h3>Iberdrola - Vinted</h3>
                     <p>
-                        <strong>BookTrack</strong> es una plataforma colaborativa para la gestión de libros, desarrollada en <strong>GitHub</strong> utilizando <strong>GIT</strong> para el control de versiones. Mediante <strong>ramas, pull requests y Git Flow</strong>, garantizamos un desarrollo organizado y sin conflictos.
+                      Web de Iberdrola estilo Vinted para la compra y venta de productos de segunda mano, promoviendo la economía circular.
                     </p>
+                </div>
+            </div>
+            
+            <div class="galeria-item" onclick="window.open('https://github.com/savamidev/Astralis')">
+                <img src="../img/juego.png" alt="Juego de Java">
+                <div class="texto-hover">
+                    <h3>Juego en Java 2D - Astralis</h3>
                     <p>
-                        La plataforma permite <strong>añadir, clasificar y buscar libros</strong> fácilmente, con una arquitectura modular que facilita su escalabilidad. Este proyecto demuestra el potencial del trabajo en equipo con <strong>GIT y GitHub</strong>, promoviendo buenas prácticas en el desarrollo de software.
-                    </p>                    
+                        Desarrollé un <strong>juego en Java 2D con Pixel Art</strong>, inspirado en los juegos retro de los 90. Utilicé <strong>Java con Swing/JavaFX</strong>.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="galeria-item" onclick="window.open('https://github.com/Proyecto-BookTrack/Proyecto-BookTrack')">
+                <img src="../img/libreria.png" alt="BookTrack">
+                <div class="texto-hover">
+                    <h3>BookTrack - Gestión de Libros</h3>
+                    <p>
+                        <strong>BookTrack</strong> es una plataforma colaborativa para la gestión de libros, desarrollada en <strong>GitHub</strong>.
+                    </p>
+                </div>
             </div>
         </div>
-        
-    </section> 
+    
+    </section>
+    
+
+    
 
     <footer>
+      <div class="footer-content">
         <p>© <script>document.write(new Date().getFullYear());</script> Ismael Vargas Duque - Todos los derechos reservados.</p>
-    </footer>
+        <div class="social-links">
+          <a href="https://instagram.com/ismavargass" target="_blank" rel="noopener">
+            <img src="../img/instagram.svg" alt="Instagram">
+          </a>
+          <a href="https://www.linkedin.com/in/ismael-vargas-duque/" target="_blank" rel="noopener">
+            <img src="../img/linkdein.svg" alt="LinkedIn">
+          </a>
+          <a href="https://github.com/IsmaVargass" target="_blank" rel="noopener">
+            <img src="../img/github.svg" alt="GitHub">
+          </a>
+          <a href="mailto:ismaelvargasduque14@gmail.com">
+            <img src="../img/correo.svg" alt="Email">
+          </a>
+        </div>
+      </div>
+    </footer>   
 
 </body>
 </html>

@@ -7,9 +7,17 @@
   <title>Inicio | Mi Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="img/logotipo.png" type="image/x-icon">
-</head>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet"></head>
 <body>
   <header>
+    <section id="inicio" class="hero">
+      <h1>Bienvenido a mi Portfolio</h1>
+      <hr>
+      <p>Desarrollador de Aplicaciones Web | Apasionado por la tecnología</p>
+      <!-- Se mantiene el enlace existente. Puedes cambiarlo si deseas navegar internamente -->
+      <a href="html/gallery.html" class="btn">Ver Proyectos</a>
+    </section>
     <video autoplay muted loop class="header-video">
       <source src="video/header.mp4" type="video/mp4">
       Tu navegador no soporta el video.
@@ -50,14 +58,6 @@
   </header>
 
   <main>
-
-    <!-- Sección principal: Hero -->
-    <section id="inicio" class="hero">
-      <h1>Bienvenido a mi Portfolio</h1>
-      <p>Desarrollador de Aplicaciones Web | Apasionado por la tecnología</p>
-      <!-- Se mantiene el enlace existente. Puedes cambiarlo si deseas navegar internamente -->
-      <a href="html/gallery.html" class="btn">Ver Proyectos</a>
-    </section>
 
     <!-- Sección Hard skills -->
     <section id="hard-skills" class="skills">
@@ -171,7 +171,23 @@
   </main>
 
   <footer>
-    <p>© <script>document.write(new Date().getFullYear());</script> Ismael Vargas Duque - Todos los derechos reservados.</p>
-  </footer>
+    <div class="footer-content">
+      <p>© <script>document.write(new Date().getFullYear());</script> Ismael Vargas Duque - Todos los derechos reservados.</p>
+      <div class="social-links">
+        <a href="https://instagram.com/ismavargass" target="_blank" rel="noopener">
+          <img src="img/instagram.svg" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/in/ismael-vargas-duque/" target="_blank" rel="noopener">
+          <img src="img/linkdein.svg" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/IsmaVargass" target="_blank" rel="noopener">
+          <img src="img/github.svg" alt="GitHub">
+        </a>
+        <a href="mailto:ismaelvargasduque14@gmail.com">
+          <img src="img/correo.svg" alt="Email">
+        </a>
+      </div>
+    </div>
+  </footer>  
 </body>
 </html>
