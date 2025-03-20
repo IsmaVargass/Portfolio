@@ -13,6 +13,41 @@ p {
     font-family: 'Antonio', sans-serif;
 }
 
+/* ANIMACIONES PARA CLASES */
+@keyframes fadeInBody {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Animación para elementos que aparecen al hacer scroll */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+  
+  /* Se activa cuando el usuario llega a esa parte */
+  .fade-in:has(+ *) {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+/* USO JS PARA QUE SIRVA EL FADE-UP, CON CSS NO SIRVE PARA TODOS LOS NAVEGADORES */
+.fade-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+  }
+  
+  .fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
 /* Estilos del header */
 header {
     position: relative;
@@ -22,6 +57,7 @@ header {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    animation: fadeInBody 1.5s ease-in-out;
 }
 
 /* Video de fondo sin afectar el contenido */
@@ -172,7 +208,6 @@ nav ul li a:hover .nav-tooltip {
     margin: auto;
 }
 
-/* Muestra las skills en 2 columnas para móvil */
 .skill {
     background-color: #262e3b;
     padding: 15px;
@@ -539,8 +574,8 @@ button:disabled {
         width: calc(33.33% - 20px);
     }
     .slider {
-        width: 80%;
-        height: 80%;
+        width: 50%;
+        height: 50%;
     }
     .galeria-item {
         width: 230px;
