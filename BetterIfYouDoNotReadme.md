@@ -26,7 +26,11 @@ El logo personal está disponible en una versión:
 
 ## 📚 **Librerías Empleadas**
 
-*Nota:* Aún no se han especificado las librerías utilizadas en el proyecto.
+- **Librerías usadas**:
+  - jQuery
+  - Bootstrap Icons
+  - Animate.css
+
 - - -
 
 ## 🌐 **Enlaces Web**
