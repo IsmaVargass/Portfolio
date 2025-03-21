@@ -615,6 +615,12 @@ button:disabled {
     .skill:hover {
       transform: scale(.90);
     }
+    .form-group {
+        padding: 3px;
+        margin: 20px;
+    }
+    .fade-up {
+        transition: opacity 1s ease-out, transform 1s ease-out;
   }
   
 /* TABLET: a partir de 768px hasta 1023px */
