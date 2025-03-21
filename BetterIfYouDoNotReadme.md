@@ -33,7 +33,7 @@ El logo personal está disponible en una versión:
 
 - **Iberdrola**: [Enlace a la página web](https://ismavargass.github.io/Iberdrola/)
 - **Astralis**: [Astralis](https://github.com/IsmaVargass/Astralis-Game)
-- **BookTrack**: [Enlace a la página web](https://github.com/Proyecto-BookTrack/Proyecto-BookTrack)
+- **BookTrack**: [Enlace al repositorio](https://github.com/Proyecto-BookTrack/Proyecto-BookTrack)
 - **Redes Sociales**:
   - [Instagram](https://instagram.com/ismavargass)
   - [GitHub](https://github.com/IsmaVargass) 
