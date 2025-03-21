@@ -317,8 +317,8 @@ footer {
 
 .galeria-item {
     position: absolute;
-    width: 200px; /* Dimensión móvil */
-    height: 250px; /* Dimensión móvil */
+    width: 300px; /* Dimensión móvil */
+    height: 350px; /* Dimensión móvil */
     border-radius: 15px;
     overflow: hidden;
     background: #fff;
