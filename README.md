@@ -7,3 +7,11 @@ Bienvenido a mi portfolio de **Desarrollo de Aplicaciones Web**. Aquí encontrar
 Cada proyecto refleja mi aprendizaje y evolución en el desarrollo web, aplicando buenas prácticas y herramientas modernas.  
 
 ¡Espero que te guste! 😃💻
+
+---
+
+## 📄 Lee más sobre mi portfolio
+
+Puedes explorar más detalles sobre el portfolio y su guía de estilos básica:
+
+[**BetterIfYouDoNotReadme**](https://github.com/IsmaVargass/Portfolio/blob/main/BetterIfYouDoNotReadme.md)
