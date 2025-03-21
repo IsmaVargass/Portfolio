@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
           entry.target.classList.add('show');
         }
       });
-    }, { threshold: 0.2 }); // Umbral ajustado para activar el efecto cuando un 30% del elemento es visible
+    }, { threshold: 0.2 }); // Umbral ajustado para activar el efecto cuando un 20% del elemento es visible
   
     fadeElements.forEach(el => observer.observe(el));
   });

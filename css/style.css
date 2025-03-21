@@ -240,7 +240,7 @@ nav ul li a:hover .nav-tooltip {
     background-color: #262e3b;
     padding: 15px;
     border-radius: 5px;
-    width: calc(50% - 20px);
+    width: calc(25% - 45px);
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -652,6 +652,18 @@ button:disabled {
 
 /* ORDENADOR: desde 1024px en adelante */
 @media screen and (min-width: 1024px) {
+    .skills-container {
+        max-width: 1000px; 
+    }
+    
+    .skill {
+        width: calc(50% - 30px); 
+    }
+
+    .skill:hover {
+        transform: scale(1.05);
+    }
+    
     .hero {
         padding: 100px 20px;
     }
@@ -675,4 +687,5 @@ button:disabled {
         width: 250px;
         height: 300px;
     }
+}
 }
